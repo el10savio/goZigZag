@@ -1,9 +1,5 @@
 package zigzag
 
-// TODO:
-// - Add Benchmarks
-// - Substitute MUL/DIV By 2 With Bit Shifts
-
 import (
 	"golang.org/x/exp/constraints"
 )
