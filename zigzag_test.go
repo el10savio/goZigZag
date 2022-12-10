@@ -1,9 +1,8 @@
-package zigzag_test
+package zigzag
 
 import (
 	"testing"
 
-	"github.com/el10savio/zigzag"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -22,7 +21,7 @@ func TestEncode(t *testing.T) {
 		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			t.Parallel()
-			actualEncoding := zigzag.Encode(tc.num)
+			actualEncoding := Encode(tc.num)
 			assert.Equal(t, tc.expectedEncoding, actualEncoding)
 		})
 	}
@@ -44,7 +43,7 @@ func TestDecode(t *testing.T) {
 		tc := tc
 		t.Run(tc.name, func(t *testing.T) {
 			t.Parallel()
-			actualDecoding := zigzag.Decode(tc.num)
+			actualDecoding := Decode(tc.num)
 			assert.Equal(t, tc.expectedDecoding, actualDecoding)
 		})
 	}
@@ -52,8 +51,8 @@ func TestDecode(t *testing.T) {
 
 func FuzzEncode(f *testing.F) {
 	f.Fuzz(func(t *testing.T, num int) {
-		numEncoded := zigzag.Encode(num)
-		numDecoded := zigzag.Decode(numEncoded)
+		numEncoded := Encode(num)
+		numDecoded := Decode(numEncoded)
 
 		// ZigZag Decoding an Encoded number
 		// yields the orginal number
