@@ -8,7 +8,10 @@ ZigZag Encoding is a way of encoding signed integers into unsigned ones. It work
 ```
 package main
 
-import "github.com/el10savio/goZigZag"
+import (
+	"fmt"
+	"github.com/el10savio/goZigZag"
+)
 
 func main() {
 	number1 := -2
