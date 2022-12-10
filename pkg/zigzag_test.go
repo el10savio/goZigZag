@@ -1,4 +1,4 @@
-package zigzag
+package goZigZag
 
 import (
 	"testing"
