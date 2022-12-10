@@ -10,7 +10,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/el10savio/goZigZag"
+	"github.com/el10savio/zigzag"
 )
 
 func main() {
