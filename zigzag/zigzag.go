@@ -1,7 +1,6 @@
 package zigzag
 
 // TODO:
-// - Add README.md
 // - Add Comments
 // - Add Benchmarks
 // - Substitute MUL/DIV By 2 With Bit Shifts
