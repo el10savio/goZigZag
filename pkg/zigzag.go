@@ -1,4 +1,4 @@
-package  goZigZag
+package zigzag
 
 // TODO:
 // - Add Benchmarks

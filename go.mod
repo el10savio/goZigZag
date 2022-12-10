@@ -1,4 +1,4 @@
-module github.com/el10savio/goZigZag
+module github.com/el10savio/zigzag
 
 go 1.19
 
