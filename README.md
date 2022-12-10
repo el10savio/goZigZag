@@ -1,4 +1,4 @@
-# goZigZag
+# zigzag
 ZigZag Encoding Library In Go
 
 ## Introduction
